@@ -1,8 +1,8 @@
 = Tesi in AsciiDoc
 
 Un punto di partenza per la scrittura di una tesi in AsciiDoc aderente alle
-https://github.com/csunibo/asciidoc-thesis/issues/2#issuecomment-1470158684[specifiche del DISI].
+https://github.com/cartabinaria/asciidoc-thesis/issues/2#issuecomment-1470158684[specifiche del DISI].
 
 Scopri di più sulla
-https://csunibo.github.io/wiki/modelli-di-tesi/asciidoc/index.html[wiki di
-CSUnibo].
+https://cartabinaria.students.cs.unibo.it/wiki/modelli-di-tesi/asciidoc/[wiki di
+CartaBinaria].
