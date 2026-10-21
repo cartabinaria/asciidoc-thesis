@@ -21,13 +21,18 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@main
-      - name: Build
-        run: "asciidoctor-pdf --theme unibo.yml -a pdf-fontsdir=fonts -a compress tesi.adoc"
+      - name: Build PDFs
+        run: |
+          asciidoctor-pdf --theme unibo.yml -a pdf-fontsdir=fonts -a compress -o tesi.pdf tesi.adoc
+          asciidoctor-pdf --theme unibo.yml -a pdf-fontsdir=fonts -a compress -o thesis.pdf thesis.adoc
       - name: Generate build artifact
         uses: actions/upload-artifact@main
         with:
           name: build
-          path: tesi.pdf
+          path: |
+            tesi.pdf
+            thesis.pdf
+          if-no-files-found: error
   deploy:
     name: Deploy
     environment:

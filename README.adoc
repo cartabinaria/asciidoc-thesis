@@ -1,7 +1,28 @@
 = Tesi in AsciiDoc
 
-Un punto di partenza per la scrittura di una tesi in AsciiDoc aderente alle
+Un punto di partenza per la scrittura di una tesi in AsciiDoc basato sulle
 https://github.com/cartabinaria/asciidoc-thesis/issues/2#issuecomment-1470158684[specifiche del DISI].
+
+== Varianti italiana e inglese
+
+Usa link:tesi.adoc[`tesi.adoc`] per l'italiano o link:thesis.adoc[`thesis.adoc`]
+per l'inglese. Entrambe le varianti condividono `unibo.yml`, `fonts/` e
+`bibliografia.adoc`. Con Asciidoctor PDF installato, dalla radice del repository:
+
+[source,shell]
+----
+asciidoctor-pdf --theme unibo.yml -a pdf-fontsdir=fonts -a compress -o tesi.pdf tesi.adoc
+asciidoctor-pdf --theme unibo.yml -a pdf-fontsdir=fonts -a compress -o thesis.pdf thesis.adoc
+----
+
+La pipeline genera entrambi i PDF nell'artefatto `build`, senza rinominare i
+sorgenti. Dopo il deploy da `main`, sono disponibili su GitHub Pages come
+https://cartabinaria.github.io/asciidoc-thesis/tesi.pdf[`tesi.pdf`] e
+https://cartabinaria.github.io/asciidoc-thesis/thesis.pdf[`thesis.pdf`].
+
+La variante inglese adatta la lingua, non certifica la conformità dell'intero
+modello alle norme del corso di laurea né l'autorizzazione a presentare la tesi
+in inglese: verifica questi requisiti con il tuo CdL.
 
 Scopri di più sulla
 https://cartabinaria.students.cs.unibo.it/wiki/modelli-di-tesi/asciidoc/[wiki di

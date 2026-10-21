@@ -1,0 +1,116 @@
+
+= Thesis Title
+:pdf-theme: unibo.yml
+:doctype: book
+:media: prepress
+:sectnums:
+:lang: en
+:listing-caption: Listing
+:toc-title: Table of Contents
+:!chapter-signifier:
+:!part-signifier:
+:appendix-caption: Appendix
+:source-highlighter: rouge
+Author Name
+:title-page:
+:toc: macro
+
+[discrete]
+== Abstract
+
+This is a sample abstract for a thesis written in English. Replace this text with a summary of the research question, the methods used to investigate it, and the main results. Explain the contribution of the work and why it matters to the reader. The abstract should make sense on its own, without requiring the reader to consult the rest of the thesis. Introduce only the background needed to understand the problem, and describe the scope of the investigation clearly. The paragraphs in this template are examples to be replaced with the content of your own work.
+
+A useful summary distinguishes the objectives of the study from its findings. Describe the evidence collected and the conclusions that follow from it, while making the limits of the investigation clear. Avoid presenting planned experiments as completed work, and define any specialist terms that are essential to the discussion. This second paragraph provides additional sample text so that the abstract can be viewed with the shared fonts, margins, and paragraph spacing. Its length does not prescribe how long an abstract must be. Once the thesis is complete, review the summary to ensure that it accurately reflects the chapters that follow and does not introduce claims that are absent from the main text.
+
+<<<
+
+[discrete]
+== Dedication
+
+To everyone who offered encouragement, shared their knowledge, and supported this work. This is an example dedication and can be replaced with your own words. Use this space for a personal message rather than a description of the research. The dedication is separate from the numbered chapters and is not included as a chapter in the table of contents. The text here is only a placeholder: keep, shorten, or replace it as appropriate for your thesis. Any names or acknowledgements included in the final document should reflect the people who actually contributed to the work.
+
+// This is the table of contents
+toc::[]
+
+== Section
+
+This chapter introduces a sample research topic and demonstrates the structure of a thesis. Begin by explaining the problem that motivates the work and the context in which it arises. Describe what is already known, identify the question that remains open, and state the objectives of the investigation. The reader should be able to understand how this chapter relates to the rest of the document. The text in this section is illustrative rather than a report of actual research. Replace it with your own argument, supported by appropriate evidence and references.
+
+List examples:
+
+1. This is an explicitly numbered list
+2. This is an explicitly numbered list
+
+//-
+
+. This is an implicitly numbered list
+. This is an implicitly numbered list
+
+//-
+
+[square]
+* This is an unordered list with square markers
+* This is an unordered list with square markers
+
+//-
+
+[circle]
+* This is an unordered list with circular markers
+* This is an unordered list with circular markers
+
+//-
+
+[disc]
+* This is an unordered list with disc markers
+* This is an unordered list with disc markers
+
+//-
+
+Lists can help distinguish a sequence of steps from a collection of related observations. Choose a numbered list when order is important, and an unordered list when the items have no required sequence. Introduce the purpose of the list in the surrounding text and explain how its items support the discussion. The examples above demonstrate several marker styles using the same shared theme as the Italian template. They do not prescribe a particular style for every chapter. Replace the repeated sample items with information that belongs to your own work, and use complete sentences where they make the discussion easier to follow. Review the generated document after changing long items, since the amount of text affects line wrapping and page breaks.
+
+The methods section should explain how the investigation was carried out. Describe the materials, assumptions, and procedures in enough detail for the reader to assess the results. State which choices were made before collecting evidence and which arose during the analysis. Where a procedure builds on published work, cite the relevant source and explain any changes made for this study.
+
+Present the results separately from the interpretation when that distinction helps the reader follow the argument. Explain what each observation shows and how it relates to the original research question. Do not replace missing measurements with illustrative values or describe a proposed test as if it had already been performed. Discuss uncertainty where it affects the conclusions, and make clear which findings are directly supported by the evidence. These sample paragraphs provide enough continuous prose to demonstrate how the document flows between lists, headings, and subsequent sections. They should be replaced before the thesis is submitted.
+
+A discussion can compare the findings with previous work and examine possible explanations for differences. Consider alternative interpretations and describe the limitations of the methods. Explain which conclusions remain valid within those limits and which questions require further investigation. Keep the distinction between observation and inference clear throughout the chapter. The purpose of the discussion is to connect the evidence to the research question, not to repeat every result. End with a transition that helps the reader understand why the next section follows from the argument presented here.
+
+=== Subsection
+
+This subsection develops one aspect of the topic introduced above. Start with a clear statement of its purpose and use the following paragraphs to explain the supporting details. A subsection should contribute to the chapter's argument rather than simply divide the page into smaller blocks of text. Introduce terminology when it first becomes necessary and use it consistently throughout the document. This sample paragraph demonstrates the appearance of prose below a numbered heading. Replace it with the background, analysis, or evidence needed for the subject of your thesis.
+
+==== Medium subsection
+
+A further level of headings can be useful when a topic contains several distinct parts. Keep the hierarchy consistent and make each heading describe the content that follows. The structure should help readers locate information without requiring them to infer how unrelated fragments fit together. This example retains the heading levels of the Italian template and uses the same fonts and spacing. The amount of detail belongs to the author: include only the divisions needed to present the work clearly, and check that the surrounding text explains their relationship to the main topic.
+
+===== Small subsection
+
+This is sample text under a smaller heading. It demonstrates another level in the document hierarchy without introducing a separate chapter. Use this level only when it helps organise the material and gives the reader a useful point of reference. Explain the relevant detail in the paragraph that follows the heading, rather than relying on the heading to carry the argument. In the final document, replace this text with content that supports the enclosing subsection. Review the complete chapter after editing to ensure that its structure still reflects the order of the discussion.
+
+===== Tiny subsection
+
+This final sample heading is followed by a short code example. Introduce code by explaining what it demonstrates and which details matter to the reader. The listing below prints a greeting and returns a successful exit status. Its caption and callout illustrate how an explanation can accompany source code without becoming part of the program itself. Longer examples should be chosen carefully so that the connection between the code and the surrounding argument remains clear. Replace this paragraph and the sample program with examples relevant to your own work when needed.
+
+.C++ code example
+[source,c++,highlight=2]
+----
+#include <iostream>
+int main(int argc, char * argv[]) {
+	std::cout << "Hello, world!" << std::endl;
+	return EXIT_SUCCESS; <1>
+}
+----
+<1> Returns 0
+
+== Conclusions
+
+The conclusions bring together the main findings and explain how they answer the research question. Summarise the contribution of the work without introducing new evidence that has not been discussed in the preceding chapters. State the limits of the conclusions and identify possible directions for future investigation. Distinguish work that has been completed from work that is only proposed. This paragraph is a placeholder for your own conclusions, not a claim about research performed by the template's authors. Replace it with a closing discussion that accurately reflects the content of your thesis.
+
+[appendix]
+== Appendix material
+
+An appendix can contain supporting material that would interrupt the main discussion, such as extended examples or additional methodological details. Explain how the material relates to the chapters and refer to it where it is needed. The citation here demonstrates a link to an entry in the shared bibliography <<t36>>. Replace this example with references that support your own work while retaining the citation syntax. Bibliographic entries keep their original authors and publication titles; using the English template does not require translating those titles or creating a second bibliography file.
+
+[bibliography]
+== Bibliography
+
+include::bibliografia.adoc[]
